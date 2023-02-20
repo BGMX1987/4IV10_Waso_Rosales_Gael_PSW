@@ -25,9 +25,9 @@ nav, section, footer, aside, article, header{
 }
 
 article, aside{
-    width: 40%;
+    width: 60%;
     display: inline-flex;
-    height: 300px;
+    height: 400px;
     padding: 1rem;
 }
 
