@@ -14,7 +14,7 @@ body{
 
 .userlogin{
     background-color: #c9e71c;
-    height: 400px;
+    height: 425px;
     width: 400px;
     border-radius: 15px solid rgb(80,140,20);
     margin-top: 10%;
@@ -100,7 +100,7 @@ buttons p{
 a{
     margin-top: 20px;
     float: left;
-    margin-left: 120px;
+    margin-left: 170px;
     color: darkmagenta;
 }
 
