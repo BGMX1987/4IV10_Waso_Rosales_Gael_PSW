@@ -62,13 +62,13 @@ body{
 .userpassword h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     float: left;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-right:5px;
     padding-left:5px;
 }
 
 .userpassword input{
-    height: 15px;
+    height: 12px;
     width: 300px;
     border: solid 2px rgb(61, 151, 230);
     border-radius: 10px;
