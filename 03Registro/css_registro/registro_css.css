@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url();
+    color:rgb(156, 15, 33);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.fondo{
+    background-color: #a68ae5;
+    height: 510px;
+    width: 400px;
+    border-radius: 15px solid rgb(80,140,20);
+    margin-top: 10%;
+    text-align-last: center;
+
+
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 10px;
+    color: rgb(33, 92, 168);
+}
+.nombre{
+    padding-top: 20px;
+
+}
+
+.nombre h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 115px;
+    margin-right:5px;
+    padding-left: 40px;
+}
+
+.nombre input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+.edad{
+    padding-top: 20px;
+
+}
+
+.edad h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 120px;
+    margin-right:5px;
+    padding-left:50px;
+}
+
+.edad input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+
+
+
+.fecha_nacimiento{
+    padding-top: 20px;
+
+}
+
+.fecha_nacimiento h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 45px;
+    margin-right:5px;
+    padding-left:50px;
+}
+
+.fecha_nacimiento input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+.email{
+    padding-top: 20px;
+
+}
+
+.email h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 75px;
+    margin-right:5px;
+    padding-left: 90px;
+}
+
+.email input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+
+
+.buttons{
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+
+
+.buttons button{
+    background-color: rgb(92, 114, 243);
+    border-color: aqua;
+    border-radius: 15px;
+    width: 159px;
+    height: 35px;
+}
+
+.buttons p{
+
+    margin-top: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.buttons2{
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+
+
+.buttons2 button{
+    background-color: rgb(92, 114, 243);
+    border-color: aqua;
+    border-radius: 15px;
+    width: 159px;
+    height: 35px;
+}
+
+.buttons p{
+
+    margin-top: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+

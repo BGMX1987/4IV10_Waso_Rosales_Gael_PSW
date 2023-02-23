@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url();
+    color:rgb(61, 151, 230);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.userlogin{
+    background-color: #c9e71c;
+    height: 700px;
+    width: 400px;
+    border-radius: 15px solid rgb(80,140,20);
+    margin-top: 10%;
+    text-align-last: center;
+
+
+}
+
+.title{
+    text-align: center;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 10px;
+    color: chocolate;
+}
+.userid{
+    padding-top: 20px;
+
+}
+
+.userid h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right:5px;
+    padding-left: 40px;
+}
+
+.userid input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+.userap_pat{
+    padding-top: 20px;
+
+}
+
+.userap_pat h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right:5px;
+    padding-left:50px;
+}
+
+.userap_pat input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+
+
+
+.userap_mat{
+    padding-top: 20px;
+
+}
+
+.userap_mat h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right:5px;
+    padding-left:50px;
+}
+
+.userap_mat input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+.username{
+    padding-top: 20px;
+
+}
+
+.username h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right:5px;
+    padding-left: 90px;
+}
+
+.username input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+
+
+.usernew_password{
+    padding-top: 20px;
+
+}
+
+.usernew_password h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right:5px;
+    padding-left: 45px;
+}
+
+.usernew_password input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+
+
+.userconfirm_password{
+    padding-top: 20px;
+
+}
+
+.userconfirm_password h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-right:5px;
+    padding-left: 25px;
+}
+
+.userconfirm_password input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px rgb(61, 151, 230);
+    border-radius: 10px;
+}
+
+
+
+
+.buttons{
+    margin-top: -90px;
+    display: inline-flex;
+}
+
+.buttons img{
+    float:left;
+
+}
+
+.buttons button{
+    border-radius: 15px;
+    width: 120px;
+    height: 35px;
+}
+
+.buttons p{
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+a{
+    margin-top: -5px;
+    float: left;
+    margin-left: 18px;
+    color: darkmagenta;
+}

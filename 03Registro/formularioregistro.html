@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <script src="../JS/validacion.js" ></script>
+    <link rel="stylesheet" href="../03Registro/css_registro/registro_css.css">
+</head>
+<body>
+    <p>
+        Habia una vez un patito que decia miau miau,
+        este patito queria aprender a utilizar 
+        diferentes tipos de formulario.
+        <br>
+        Existen dos metodos principales para la obtencion 
+        de los datos dentro de un formulario web,
+        para lo cual aqui lo explicaremos:
+    </p>
+    <br>
+    <h1>Get: </h1> Este metodo es el estandar como salida del 
+    navegador mediante el cual se resuelve una peticion por parte del 
+    cliente, asi mismo en la salida estandar(url),
+    se puedene visualizar los datos enviados mediante el formulario.
+    <br>
+    <h1>POST: </h1> Este metodo es el mas utilizado para el envio 
+    de informacion desde un formulario atendiendo una peticion por 
+    parte del cliente, actuando para poder agregar o insertar nuevos 
+    datos en una BD, asi mismo a diferencia del metodo GET este
+     utiliza "ubn tipo de seguridad ", mediante el cual la 
+    informacion no es visible por medio de la salida estandar del navegador.
+    <br>
+<div class="fondo">
+    <div class="container">
+        <div class="content-formulario">
+            <form name="formulario"  method="get" onsubmit="return validar(this)">
+                <br>
+            <div class="titulo">
+                <h2>Registro</h2>
+            </div>
+                <div class="nombre">
+                    <label> <h2>Nombre: </h2></label>
+                    <br>
+                    <input type="text"  name="nombre" 
+                    id="nombre">
+                </div>
+                <div class="edad">
+                    <br>
+                    <label><h2>Edad: </h2></label>
+                    <br>
+                    <input type="number" name="edad"
+                    id="edad" min="01" max="99">
+                    <br>
+                </div>
+                <div class="fecha_nacimiento">
+                    <br>
+                    <label><h2>Fecha de nacimiento </h2></label>
+                    <br>
+                    <input type="date" name="fecha" 
+                    id="miento">
+                    <br>
+                </div>
+                <div class="email">
+                    <br>
+                    <label> <h2>Email: </h2></label>
+                    <br>
+                    <input type="email" name="correo" 
+                    id="correo">
+                    <br>
+                </div>
+                <div class="buttons">
+                <br>
+                <button>
+                    <p>
+                    <input type="submit" name="enviar" 
+                    value="Enviar datos del registro">
+                    <br>
+                    </p>
+                </button>
+                </div>
+                <div class="buttons2">
+                    <br>
+                    <button>
+                    <p><input type="reset" name="borrar" 
+                    value="Borrar Datos">
+                    </p>
+                    </button>    
+                    <br>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
