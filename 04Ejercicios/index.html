@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de interes</title>
+</head>
+<body>
+    <div class="container">
+        <form method="get" name="formulario" action=" ">
+            <label> Formulario para el calculo de funciones de interes al 2% mensual del banco de patoitos que dicen miau miau</label>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai">
+                    <tr>
+                        <td> Introduce la cantidad que desea invertir: </td>
+                        <td> <input type="text" id="cantidad" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <t>
+                        <td></td>
+                        <td><input type="button" name="invertir" value="calcular interes" onclick="return interes()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Su sueldo total con l interes del 2% mensual es de: 
+                        </td>
+                        <td>
+                            <input type="text" name="sueldoi" id="cantidadi" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/interes.js"></script>
+    </div>
+</body>
+</html>

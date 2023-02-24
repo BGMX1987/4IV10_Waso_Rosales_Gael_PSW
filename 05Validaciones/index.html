@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea de PSW</title>
+</head>
+<body>
+            <h2> Grupo 4IV10, Alumno: Gael Waso Rosales </h2>
+
+    <div class="container">
+        <form method="get" id="formulario1" action=" ">
+            <h2> Ejercicio 1: Calculo de interes de una cantidad hasta por 36 meses a 8.2% de interes mensual:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Cantidad que desea invertir: </td>
+                        <td> <input type="text"   id="cantidad" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td> Numero de meses de la inversion: </td>
+						<td> <input type="number" id="meses" min="1" max="36" value="0"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="invertir" value="calcular interes" onclick="return f_interes()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Al finalizar su inversión valdra: 
+                        </td>
+                        <td>
+                            <input type="text" name="sueldoi" id="cantidadi" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+		<br> <br>
+        <form method="get" id="formulario2" action=" ">
+            <h2> Ejercicio 2: Calculo de sueldo con comision de 35% por mas de 5 ventas, menos 12% de impuestos:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Sueldo base: </td>
+                        <td> <input type="text"   id="sueldo" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td> Numero de ventas en el mes: </td>
+						<td> <input type="number" id="ventas" min="0" max="99" value="1"> </td>
+                    </tr>
+                    <tr>
+                        <td> Monto de las ventas del mes: </td>
+                        <td> <input type="text"   id="monto_ventas" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="sueldo" value="calcular sueldo" onclick="return f_sueldo()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Recibiras por comision de ventas: 
+                        </td>
+                        <td>
+                            <input type="text" name="comision_i" id="comision_tot" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tu salario del mes es: 
+                        </td>
+                        <td>
+                            <input type="text" name="sueldoi" id="sueldo_tot" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+		<br> <br>
+        <form method="get" id="formulario3" action=" ">
+            <h2> Ejercicio 3: Calculo de descuento en productos de acuerdo a su tipo:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Lista de productos: </td>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> Nombre <input type="text"   id="nombre1" > </td>
+                        <td> Marca  <input type="text"   id="marca1" > </td>
+                        <td> Tipo   <input type="text"   id="tipo1" > </td>
+                        <td> Precio <input type="text"   id="precio1" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> Nombre <input type="text"   id="nombre2" > </td>
+                        <td> Marca  <input type="text"   id="marca2" > </td>
+                        <td> Tipo   <input type="text"   id="tipo2" > </td>
+                        <td> Precio <input type="text"   id="precio2" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> Nombre <input type="text"   id="nombre3" > </td>
+                        <td> Marca  <input type="text"   id="marca3" > </td>
+                        <td> Tipo   <input type="text"   id="tipo3" > </td>
+                        <td> Precio <input type="text"   id="precio3" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> Nombre <input type="text"   id="nombre4" > </td>
+                        <td> Marca  <input type="text"   id="marca4" > </td>
+                        <td> Tipo   <input type="text"   id="tipo4" > </td>
+                        <td> Precio <input type="text"   id="precio4" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> Nombre <input type="text"   id="nombre5" > </td>
+                        <td> Marca  <input type="text"   id="marca5" > </td>
+                        <td> Tipo   <input type="text"   id="tipo5" > </td>
+                        <td> Precio <input type="text"   id="precio5" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="bcuenta" value="calcular total" onclick="return f_cuenta()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tu cuenta total es: 
+                        </td>
+                        <td>
+                            <input type="text" name="cuenta" id="cuenta_tot" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+		<br> <br>
+        <form method="get" id="formulario4" action=" ">
+            <h2> Ejercicio 4: Calculo de calificacion de materia de Algoritmos:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Calificaciones: </td>
+                    </tr>
+                    <tr>
+                        <td> Parcial 1 </td>
+                        <td> <input type="number" id="parcial_1" min="0" max="10"> </td>
+                    </tr>
+                    <tr>
+                        <td> Parcial 2 </td>
+                        <td> <input type="number" id="parcial_2" min="0" max="10"> </td>
+                    </tr>
+                    <tr>
+                        <td> Parcial 3 </td>
+                        <td> <input type="number" id="parcial_3" min="0" max="10"> </td>
+                    </tr>
+                    <tr>
+                        <td> Examen Final </td>
+                        <td> <input type="number" id="examen" min="0" max="10"> </td>
+                    </tr>
+                    <tr>
+                        <td> Trabajo final </td>
+                        <td> <input type="number" id="trabajo" min="0" max="10"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="calif" value="obtener calificacion" onclick="return f_califica()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tu calificacion final es: 
+                        </td>
+                        <td>
+                            <input type="text" name="califf" id="calific_final" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+		<br> <br>
+        <form method="get" id="formulario5" action=" ">
+            <h2> Ejercicio 5: Porcentaje de mujeres y hombres en un grupo:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Numero de mujeres </td>
+                        <td> <input type="number" id="mujeres" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td> Numero de hombres </td>
+                        <td> <input type="number" id="hombres" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="porcen" value="obtener porcentajes" onclick="return f_porcentajes()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Porcentaje mujeres: 
+                        </td>
+                        <td>
+                            <input type="text" name="numm" id="por_mujer" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Porcentaje hombres: 
+                        </td>
+                        <td>
+                            <input type="text" name="numh" id="por_hombre" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+		<br> <br>
+        <form method="get" id="formulario6" action=" ">
+            <h2> Ejercicio 6: Calculo de la edad de una persona:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Captura tu fecha de nacimiento: </td>
+                        <td> <input type="date"   id="nacimiento" > </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="edad" value="calcular edad" onclick="return f_edad()"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tu edad es: 
+                        </td>
+                        <td>
+                            <input type="text" name="edad1" id="edad" readonly="readonly" class="input_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+		<br> <br>
+        <form method="get" id="formulario7" action=" ">
+            <h2> Ejercicio 7: Operaciones con dos numeros:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Primer numero: </td>
+                        <td> <input type="number" id="num_1" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td> Segundo numero </td>
+                        <td> <input type="number" id="num_2" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="oper1" value="calcular" onclick="return f_dos_num()"></td>
+                    </tr>
+                    <tr>
+                        <td> Resultado: </td>
+                        <td> <input type="text" name="oper" id="resultado" readonly="readonly" class="input_text"> </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+		
+		<br> <br>
+        <form method="get" id="formulario8" action=" ">
+            <h2> Ejercicio 8: Mayor de tres numeros:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Primer numero: </td>
+                        <td> <input type="number" id="nume_1" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td> Segundo numero </td>
+                        <td> <input type="number" id="nume_2" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td> Tercer numero </td>
+                        <td> <input type="number" id="nume_3" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="oper1" value="calcular" onclick="return f_tres_num()"></td>
+                    </tr>
+                    <tr>
+                        <td> El mayor es: </td>
+                        <td> <input type="text" name="oper2" id="mayor" readonly="readonly" class="input_text"> </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+		<br> <br>
+        <form method="get" id="formulario9" action=" ">
+            <h2> Ejercicio 9: Horas extras:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Numero de horas trabajadas: </td>
+                        <td> <input type="number" id="horas_tot" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td> Costo de hora trabajada: </td>
+                        <td> <input type="text"   id="costo_hora" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="oper1" value="calcular" onclick="return f_extras()"></td>
+                    </tr>
+                    <tr>
+                        <td> Recibiras de horas extra: </td>
+                        <td> <input type="text" name="oper3" id="monto_extra" readonly="readonly" class="input_text"> </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+		<br> <br>
+        <form method="get" id="formulario10" action=" ">
+            <h2> Ejercicio 10: Reparto de utilidades:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr>
+                        <td> Numero de anios de antiguedad: </td>
+                        <td> <input type="number" id="antiguo" min="0" max="99"> </td>
+                    </tr>
+                    <tr>
+                        <td> Sueldo mensual: </td>
+                        <td> <input type="text"   id="sueldo_mes" onkeypress="return validarn(event)"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="oper1" value="calcular utilidades" onclick="return f_utilidades()"></td>
+                    </tr>
+                    <tr>
+                        <td> Recibiras de Utilidades: </td>
+                        <td> <input type="text" name="oper3" id="utilidades" readonly="readonly" class="input_text"> </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="borrar datos" onclick="return borrard()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+
+        <script src="./JS/funciones.js"></script>
+    </div>
+</body>
+</html>
