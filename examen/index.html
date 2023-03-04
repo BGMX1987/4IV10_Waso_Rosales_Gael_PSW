@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../examen/css/style.css">
+    <title>Tarea de PSW</title>
+</head>
+<body>
+            <h2> Grupo 4IV10, Alumno: Gael Waso Rosales </h2>
+
+    <div class="container">
+        <form method="get" id="formulario1" action=" " >
+            <h2> Cálculo de tabla de interés compuesto, Banco LaEstafa:</h2>
+            <br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="1">
+                    <tr class="prestamo">
+                        <td class="prestamo"><h5> Cantidad del préstamo para invertir en el terreno:</h5> </td>
+                        <td> <h1><input type="text"   id="prestamo" name="prestamo" onkeypress="return validarn(event)" class="prestamo" min="01" max="999" onpaste = "return false"onkeypress="return validar(event)"   onsubmit="return validar(event)" ></h1> </td>
+                    </tr>
+                    <tr class="interes">
+                        <td class="interes"><h5> Tasa de interés anual:</h5> </td>
+						<td> <h1><input type="number" id="interes" name="interes" min="1" max="99" value="0" class="interes" onpaste = "return false" onkeypress="return validarn(event)" onsubmit="return validar(event)"></h1> </td>
+                    </tr>
+                    <tr class="plazo">
+                        <td class="plazo"><h5> Plazo para pagar en años: </h5></td>
+						<td> <h1><input type="number" id="plazo" name="plazo" min="1" max="99" value="0" class="plazo" min="01" max="999" onpaste = "return false"  onkeypress="return validarn(event)"  onsubmit="return validar(event)"></h1></td>
+                    </tr>
+                </table>
+			<br>
+			<input class="boton" type="button" name="calcular" value="calcular tabla" onclick="return f_interes()" onsubmit="return validar(this)">
+			<input  class="boton" type="button" name="borrar" value="borrar datos" onclick="return borrard()">
+            </div>
+        </form>
+		<br> <br>
+		<div id="myform">
+			 <h3><b><center>Tabla de Interés compuesto</center></b></h3>
+			 <center>
+			  <table id="tableData" border="1" cellpadding="2">
+				<col width="80px" />
+				<col width="110px" />
+				<col width="110px" />			  
+				<col width="110px" />
+				<col width="110px" />
+				<col width="110px" />			  
+			   <tr>
+				<td><b>Pago No.</b></td>
+				<td><b>Cuota</b></td>
+				<td><b>Interés</b></td>
+				<td><b>Abono a capital</b></td>
+				<td><b>Saldo inicial</b></td>
+				<td><b>Saldo final</b></td>
+			   </tr>
+			  </table>
+			 </center>
+		</div>
+        <script src="./JS/interes.js"></script>
+    </div>
+</body>
+</html>

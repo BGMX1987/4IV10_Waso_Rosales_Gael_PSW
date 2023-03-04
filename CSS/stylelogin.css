@@ -90,7 +90,7 @@ body{
     height: 35px;
 }
 
-buttons p{
+.buttons p{
     margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
