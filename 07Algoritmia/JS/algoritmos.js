@@ -1,12 +1,11 @@
-function problema1(){
+﻿function problema1(){
     var valores = document.getElementById("p1-input").value;
-    var split = valores.split(' ').reverse();
+    var split = valores.split(' ')
     var resultado = '';
 
-    split.forEach(function (palabras, i){
-
-        if(i != 0 || i != split.length) resultado += ' ';
-        resultado += palabras;
+	split.reverse();
+    split.forEach(function (palabra){
+        resultado = resultado+palabra+' ';
     });
 
     document.querySelector('#p1-output').textContent = resultado;
@@ -29,18 +28,11 @@ function problema2()
     var v1 = [x1, x2, x3, x4, x5];
     var v2 = [y1, y2, y3, y4, y5];
 
-/*El método sort() ordena los elementos de un arreglo (array) localmente y devuelve el arreglo ordenado. 
-La ordenación no es necesariamente estable. El modo de ordenación por defecto responde a la posición del 
-valor del string de acuerdo a su valor Unicode. */
-    v1 = v1.sort(function (v1, v2)
-    {
-        return v2-v1;
-    });
+    v1.sort(function (a,b){return a-b});
 
-    v2 = v2.sort(function (v1, v2)
-    {
-        return v2-v1;
-    });
+    v2.sort(function (a,b){return a-b});
+    
+    v2 = v2.reverse();
 
     var resultado = 0;
 
@@ -56,53 +48,49 @@ function problema3()
     var alfabeto = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
     'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
     'V', 'W', 'X', 'Y', 'Z'];
-    //obtener la entrada de los datos
+
     var p3_input= document.querySelector('#p3-input').value;
-
-    //Separar por comas
     var p3_palabras= p3_input.split(',');
-    //necesitamos una funcion que se encargue de recuperar cada palabra
-    //Eliminar espacios
-    p3_palabras=p3_palabras.map(function(palabras)
-    {
-        return palabras.replace(/\s/g, '').toUpperCase();
-    });
-     //Calcular los caracteres únicos
-    var p3_res='';
-    //funcion que se encargue de calcular que contienen el arreglo y seprara para 
-    //cada caracter contarlo
-   p3_palabras.forEach(function(palabra, i)
-   {
-    var letras_unicas = [];
-    var palabra_array= palabra.split('');
 
-    //iterar el alfabeto
-    alfabeto.forEach(function (letra, j)
+    p3_palabras=p3_palabras.map(function(palabra)
     {
-        //itero cada palabra
-        palabra_array.forEach(function(letras_palabras, k)
-        {
-            //comprobar que la letra este dentro del alfabeto
-            if(letras_palabras==letra)
-            {
-                //si la letra no la hemos contado la agregamos a un array para contar la letras unicas
-                if(letras_unicas.indexOf(letra)<0)
-                {
-                    letras_unicas.push(letra);
-
-                }
-            }
-        });
+        return palabra.replace(/\s/g, '').toUpperCase();
     });
-    //vammos a contar la salida 
-    p3_res+= 'Palabras: ' + palabra + '='+ letras_unicas.length +' \n';
+	var num_letras = [];
+
+    p3_palabras.forEach(function(palabra, i)
+    {
+		var letras_unicas = [];
+		var palabra_array= palabra.split('');
+
+		//recorrer alfabeto
+		alfabeto.forEach(function (letra, j)
+		{
+			//recorrer cada palabra
+			palabra_array.forEach(function(letras_palabras, k)
+			{
+				//comprobar que la letra este dentro del alfabeto
+				if(letras_palabras==letra)
+				{
+					//si la letra no la hemos contado la agregamos a un array para contar la letras unicas
+					if(letras_unicas.indexOf(letra)<0)
+					{
+						letras_unicas.push(letra);
+
+					}
+				}
+			});
+		});
+		num_letras[i]=letras_unicas.length; // Se guarda el número de letras unicas de cada palabra
    });
-   //imprimir salida
-   document.querySelector('#p3-output').textContent =p3_res;
+   var maximo=num_letras.indexOf(Math.max(...num_letras));  //Se busca el mayor y se obtiene su indice en el arreglo
+
+   document.querySelector('#p3-output').textContent ="La palabra con más letras únicas es: "+p3_palabras[maximo]+" con "+num_letras[maximo];
 }
 function borrar1()
 {
     document.querySelector("#p1-output").textContent="";
+    document.getElementById("p1-input").value="";
 }
 function borrar2()
 {
@@ -121,5 +109,6 @@ function borrar2()
 function borrar3()
 {
     document.querySelector("#p3-output").textContent="";
+    document.getElementById("p3-input").value="";
  
 }
