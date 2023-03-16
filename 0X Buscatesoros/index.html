@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Juegos en Javascript</title>
+</head>
+<div class="header">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Index</a></li>
+        </ul>
+      </nav>
+    </header></div>
+<body>
+    <div class="container">
+        <!--Problema 1-->
+        <div class="problema-container">
+            <h2 class="problema-title">Busca Monedas</h2>
+            <h3>Estás por iniciar la busqueda de cofres con monedas de oro en un mapa misterioso, sigue las instrucciones.
+            </h3>
+			<br>
+            <div class = "tabla-container">
+                <table id="tabla" class="tablai" border="0">
+                    <tr>
+                        <td> Ancho del mapa: </td>
+                        <td> <input type="number" id="ancho" value=12 min="3" max="50"> </td>
+						<td> Cada cofre que descubras inicia con un valor de 20 monedas</td>
+							
+                    </tr>
+                    <tr>
+                        <td> Altura del mapa: </td>
+                        <td> <input type="number" id="alto" value=12 min="3" max="50"> </td>
+						<td> Por cada celda que descubras a su alrededor, se descuenta una moneda.</td>
+                    </tr>
+                    <tr>
+                        <td> Monedas a encontrar: </td>
+                        <td> <input type="number" id="monedas" value=10 min="1" max="50"> </td>
+						<td> Compite por obtener el mayor número de monedas. </td>
+                    </tr>
+                </table>
+
+            <div class="problema-content">
+                <button type="button" class="problema-button" onclick="return buscamonedas()" 
+                style="margin-top: 1rem;">Empezar a Jugar!</button>
+                <button type="button" class="problema-button2" onclick="borra_tabla()">Reiniciar</button>
+            </div>
+            <div class="marcadordiv">
+			 <center>
+			  <table id="marcador" border="1">
+                    <tr >
+                        <td style="height: 30px"> Cofres por descubrir: </td>
+                        <td id="cofres" style="width: 80px"> </td>
+						<td> Monedas obtenidas:</td>
+                        <td id="score" style="width: 80px"> </td>
+						<td> Mejor puntuación:</td>
+                        <td id="best_score" style="width: 80px"> </td>
+							
+                    </tr>
+			  </table>
+			 </center>
+            </div>
+			<br>
+
+			<div>
+			 <center>
+			  <table id="tablero" border="1" cellpadding="2">
+			  </table>
+			 </center>
+			</div>
+        </div>
+
+    </div>
+    <script src="./JS/juego.js"></script>
+</body>
+</html>

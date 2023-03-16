@@ -1,0 +1,129 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #e1e1e1;
+  }
+  header{
+    background-color: #85b394;
+    width: 100%; 
+    height: 48px;}
+header nav ul li
+{
+    list-style-type: none;
+     float: left;
+}
+header nav ul li a
+{
+    text-decoration: none; 
+    padding: 15px 15px 15px 20px; 
+    display: inline-block; 
+    color: #000000;
+}
+.botonCelda {
+/*  border: none;*/
+  background-color: rgb(238, 215, 138);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 8px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}  
+
+.celda {
+/*  border: none;*/
+  text-align: center;
+  vertical-align: bottom;
+  text-decoration: none;
+  display: inline-block; 
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}  
+
+.rojo {color: red}
+.verde {color: green}
+.azul  {color: blue}
+.gold  {background-color: yellow}
+
+header nav ul li a:hover{background-color: #34502b; color: rgb(255, 255, 255);}
+  h3, h4 {color: rgba(0, 0, 0, 0.87);}
+  .container {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  .problema-container {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .problema-title {
+    color: rgba(0, 0, 0, 0.57);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000000;
+  }
+  .problema-content {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  input.problema-input {
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.57);
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(116, 6, 112);
+  }
+  button.problema-button {
+    border: none;
+    background-color: rgb(111, 255, 0);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+  }
+  button.problema-button2 {
+    border: none;
+    margin-top: 10px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.4rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .problema-output {
+    width: 70%;
+    color: rgba(0, 0, 0, 0.70);
+    font-family: monospace;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  table.problema-table {
+    margin: 1rem;
+    border: 1px solid rgb(208, 208, 208);
+    text-align: center;
+  }
